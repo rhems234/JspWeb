@@ -58,32 +58,6 @@
 			%>
       </div>
     </div>
-
-
-     <%-- <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1"><%= rs.getString("p_name") %><span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      
-      <div class="col-md-5 order-md-1">
-      <img src="upload2/P1234.png" width="100%" height="100%" x="50%" y="50%"/>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-    
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      
-      <div class="col-md-5">
-      <img src="upload2/P1234.png" width="100%" height="100%" x="50%" y="50%"/>
-      </div> 
-       
-    </div> --%>
  
 <%@ include file="footer.jsp"%>
 

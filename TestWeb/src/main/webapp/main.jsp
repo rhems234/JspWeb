@@ -43,12 +43,6 @@
  <div class="container marketing">
 
     <div class="row">
-      <!-- <div class="col-lg-4">
-      <img src="upload2/neck1.jpg" width="140" height="140" x="50%" y="50%"/>
-        <h2 class="fw-normal">NackLace</h2>
-        <p>별23#에서 아름답고 트렌디한 감성의 패션아이템을 만나보세요!</p>
-        <p><a class="btn btn-secondary" href="Necklace.jsp">목걸이 보러가기 »</a></p>
-      </div> -->
       
       <div style="text-align:center" class="col-lg-4">
       <img src="upload2/ring1.jpg" width="140" height="140" x="50%" y="50%"/>
@@ -56,14 +50,10 @@
         <p>별23#에서 아름답고 트렌디한 감성의 패션아이템을 만나보세요!</p>
         <p><a class="btn btn-secondary" href="Ring.jsp">반지 보러가기 »</a></p>
       </div>
-      <!-- <div class="col-lg-4">
-      <img src="upload2/hairpin.jpg" width="140" height="140" x="50%" y="50%"/>
-        <h2 class="fw-normal">HairPin</h2>
-        <p>별23#에서 아름답고 트렌디한 감성의 패션아이템을 만나보세요!</p>
-        <p><a class="btn btn-secondary" href="HairPin.jsp">머리핀 보러가기 »</a></p>
-      </div> -->
+     
     </div>
-   </div>  
+   </div>
+   
 <%@ include file="footer.jsp"%>
 
   </body>
