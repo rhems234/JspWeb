@@ -8,7 +8,7 @@
 	<sql:setDataSource var="dataSource"
 		url="jdbc:oracle:thin:@localhost:1521:xe"
 		driver="oracle.jdbc.driver.OracleDriver" 
-		user="webmarket" password="webmarket1234" />
+		user="WebMarketDB" password="web1234" />
 
 
 	<sql:update dataSource="${dataSource}" var="resultSet">

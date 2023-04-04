@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,20 +10,18 @@
 	<sql:setDataSource var="dataSource"
 		url="jdbc:oracle:thin:@localhost:1521:xe"
 		driver="oracle.jdbc.driver.OracleDriver" 
-		user="webmarket" password="webmarket1234" />
+		user="WebMarketDB" password="web1234" />
 
 
 <sql:query dataSource="${dataSource}" var="resultSet">
    SELECT * FROM MEMBER2 WHERE ID=?
 	<sql:param value="<%=sessionId%>" />
 </sql:query>
-
-
-	
 	<title>회원 수정</title>
 </head>
 <body onload="init()">
 	<jsp:include page="/menu.jsp" />
+	
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">회원 수정</h1>
@@ -41,7 +38,7 @@
 	<c:set var="month" value="${birth.split('/')[1]}" />
 	<c:set var="day" value="${birth.split('/')[2]}" />
 	
-	<div class="container">
+	<div class="container" align="center">
 		<form name="newMember" class="form-horizontal"
 			action="processUpdateMember.jsp" method="post"
 			onsubmit="return checkForm()">

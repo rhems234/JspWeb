@@ -1,9 +1,19 @@
 <%@ page contentType="text/html; charset=utf-8"%>
+<%@ page errorPage ="exceptionNoProductId.jsp"%>
 <!DOCTYPE html>
 <html lang="KO">
 <head>
 <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <title>상품 목록</title>
+<script type="text/javascript">
+	function addToCart() {
+		if (confirm("상품을 장바구니에 추가하시겠습니까?")) {
+			document.addForm.submit();
+		} else {		
+			document.addForm.reset();
+		}
+	}
+</script>
 </head>
   
 <body>
@@ -34,10 +44,8 @@
         <p>신주, 앤틱도금</p> 
 		<p><%=rs.getString("p_description") %>
 		<br>
-        <a href="cart.jsp" type="button" class="btn btn-outline-primary me-2">
-        상품 구매</a>
-        <a href="#" type="button" class="btn btn-outline-primary me-2">
-        장바구니 담기</a>
+        <a href="#" type="button" class="btn btn-outline-primary me-2" onclick="addToCart()">
+        상품 추가</a>
         <hr class="featurette-divider">
         <%
 			}

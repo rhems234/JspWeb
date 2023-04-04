@@ -15,7 +15,7 @@
 	
 	<div class="container">
 		<p><%= request.getRequestURI() %></p>
-		<p> <a href="products.jsp" class="btn btn-secondary">상품 목록
+		<p> <a href="Ring.jsp" class="btn btn-secondary">상품 목록
 		&raquo;</a>
 	</div>
 </body>

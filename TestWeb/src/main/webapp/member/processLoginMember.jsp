@@ -15,7 +15,7 @@
 	driver="oracle.jdbc.driver.OracleDriver" user="WebMarketDB" password="web1234" />
 
 <sql:query dataSource="${dataSource}" var="resultSet">
-   SELECT * FROM MEMBER2 WHERE ID=? and password=?  
+   SELECT * FROM member2 WHERE ID=? and password=?  
    <sql:param value="<%=id%>" />
 	<sql:param value="<%=password%>" />
 </sql:query>

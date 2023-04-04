@@ -1,12 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="java.util.Date"%>
-<!DOCTYPE html>
-<html>
-<head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	String sessionId = (String) session.getAttribute("sessionId");
+%>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<title>Insert title here</title>
-</head>
-<body>	
 	<div class = "container">
 		<div class = "text-center">
     		<h1>별23#</h1>
@@ -25,14 +22,20 @@
     </ul>
     
     <div class="col-md-3 text-end">
-    	<a href="#" type="button" class="btn btn-outline-primary me-2">
-    	<i class="bi bi-bag"></i>
-        장바구니</a>
-        <a href="login.jsp" type="button" class="btn btn-outline-primary me-2">
-        로그인</a>
-        <a href="member/addMember.jsp" type="button" class="btn btn-outline-primary me-2">
-        회원가입</a>
+    	<a href="<c:url value="cart.jsp"/>" type="button" class="btn btn-outline-primary me-2">
+    	<i class="bi bi-bag">장바구니</i></a>
+        <c:choose>
+        
+        <c:when test="${empty sessionId}">
+        <a href="<c:url value="/member/loginMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">로그인</a>
+	    <a href="<c:url value="/member/addMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">회원가입</a>
+        </c:when>
+        
+        <c:otherwise>
+			<li style="padding-top: 7px; color:white">[<%=sessionId %>님]</li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/logoutMember.jsp"/>">로그아웃</a></li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/updateMember.jsp"/>">회원 수정</a></li>
+		</c:otherwise>
+        </c:choose>
       </div>
     </header>
-</body>
-</html>
