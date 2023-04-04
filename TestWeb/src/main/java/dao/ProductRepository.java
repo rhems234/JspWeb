@@ -19,7 +19,7 @@ public class ProductRepository {
 		phone.setManufacturer("KOR");
 		phone.setUnitsInStock(100);
 		phone.setCondition("New");
-		phone.setFilename("P1234.jpg");
+		phone.setFilename("P1234.png");
 		
 		Product notebook = new Product("p1235", "LG PC 그램", 1500000);
 		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");

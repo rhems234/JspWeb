@@ -24,6 +24,7 @@
       <div class="col-md-7">    	
       	<%@ include file="dbconn.jsp" %>
 			<%
+				String id = request.getParameter("id");
 				String sql = "select * from product";
 				pstmt = conn.prepareStatement(sql);
 				rs = pstmt.executeQuery();
@@ -44,8 +45,10 @@
         <p>신주, 앤틱도금</p> 
 		<p><%=rs.getString("p_description") %>
 		<br>
+		<form name="addForm" action="./addCart.jsp?id=<%=rs.getString("p_id")%>" method="post">
         <a href="#" type="button" class="btn btn-outline-primary me-2" onclick="addToCart()">
         상품 추가</a>
+        </form>
         <hr class="featurette-divider">
         <%
 			}

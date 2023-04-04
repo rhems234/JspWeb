@@ -72,5 +72,5 @@
 		list.add(goods);
 	}
 
-	response.sendRedirect("product.jsp?id=" + id);
+	response.sendRedirect("Ring.jsp?id=" + id);
 %>

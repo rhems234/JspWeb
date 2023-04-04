@@ -3,6 +3,7 @@
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <script type="text/javascript">
 	function checkForm() {
 		if (!document.newMember.id.value) {

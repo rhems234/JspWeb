@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="KO">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <title>회원 정보</title>
 </head>

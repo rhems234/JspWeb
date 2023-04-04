@@ -64,7 +64,7 @@
 					<th></th>
 				</tr>
 			</table>
-			<a href="./products.jsp" class="btn btn-secondary"> &laquo; 쇼핑 계속하기</a>
+			<a href="./Ring.jsp" class="btn btn-secondary"> &laquo; 쇼핑 계속하기</a>
 		</div>
 		<hr>
 	</div>

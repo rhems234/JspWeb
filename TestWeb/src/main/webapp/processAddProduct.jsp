@@ -68,7 +68,7 @@
 	if(conn != null)
 		conn.close();
 	
-	response.sendRedirect("products.jsp");
+	response.sendRedirect("Ring.jsp");
 	
 // 	ProductRepository dao = ProductRepository.getInstance();
 		

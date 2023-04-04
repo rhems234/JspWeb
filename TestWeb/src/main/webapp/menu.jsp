@@ -14,28 +14,28 @@
     </a>
       
  	<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="main.jsp" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="<c:url value="/main.jsp"/>" class="nav-link px-2 link-dark">Home</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">#</a></li>
-        <li><a href="Ring.jsp" class="nav-link px-2 link-dark">Ring</a></li>
-        <li><a href="addProduct.jsp" class="nav-link px-2 link-dark">상품등록</a></li>
-        <li><a href="/board/list.jsp" class="nav-link px-2 link-dark">게시판</a></li>
+        <li><a href="<c:url value="/Ring.jsp"/>" class="nav-link px-2 link-dark">Ring</a></li>
+        <li><a href="<c:url value="/addProduct.jsp"/>" class="nav-link px-2 link-dark">상품등록</a></li>
+        <li><a href="<c:url value="/BoardListAction.do?pageNum=1"/>" class="nav-link px-2 link-dark">게시판</a></li>
     </ul>
     
     <div class="col-md-3 text-end">
     	<a href="<c:url value="cart.jsp"/>" type="button" class="btn btn-outline-primary me-2">
     	<i class="bi bi-bag">장바구니</i></a>
+    	
         <c:choose>
-        
         <c:when test="${empty sessionId}">
-        <a href="<c:url value="/member/loginMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">로그인</a>
-	    <a href="<c:url value="/member/addMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">회원가입</a>
+    	    <a href="<c:url value="/member/loginMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">로그인</a>
+	    	<a href="<c:url value="/member/addMember.jsp"/>" type="button" class="btn btn-outline-primary me-2">회원가입</a>
         </c:when>
         
         <c:otherwise>
 			<li style="padding-top: 7px; color:white">[<%=sessionId %>님]</li>
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/logoutMember.jsp"/>">로그아웃</a></li>
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/updateMember.jsp"/>">회원 수정</a></li>
+			<a class="btn btn-outline-primary me-2" href="<c:url value="/member/logoutMember.jsp"/>" type="button">로그아웃</a>
+			<a class="btn btn-outline-primary me-2" href="<c:url value="/member/updateMember.jsp"/>" type="button">회원 수정</a>
 		</c:otherwise>
         </c:choose>
-      </div>
-    </header>
+	</div>
+</header>
