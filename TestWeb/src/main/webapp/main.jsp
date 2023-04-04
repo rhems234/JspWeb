@@ -11,7 +11,7 @@
 
 <%@ include file="menu.jsp" %>
    	 
-    	<div class="container">
+    	<div class="container" align="center">
    		<div class = "text-center">
    			<%
 				response.setIntHeader("Refresh", 5);
@@ -30,22 +30,14 @@
 				out.println("현재 접속  시각: " + CT + "\n");
 			%>
    		</div>
-   	</div>
-   	
    	<br>
-   	<br>
-   	
- <div class="container marketing">
-
-    <div class="row">
       <div class="col-lg-4">
-      <img src="upload2/ring1.jpg" width="140" height="140" x="50%" y="50%"/>
+      <img src="upload2/ring1.jpg" width="200" height="200" x="50%" y="50%"/>
         <h2 class="fw-normal">Ring</h2>
         <p>별23#에서 아름답고 트렌디한 감성의 패션아이템을 만나보세요!</p>
         <p><a class="btn btn-secondary" href="Ring.jsp">반지 보러가기 »</a></p>
       </div>
-     
-    </div>
+   
    </div>
    
 <%@ include file="footer.jsp"%>
