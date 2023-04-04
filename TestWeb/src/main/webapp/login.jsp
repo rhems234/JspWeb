@@ -1,13 +1,16 @@
-<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <title>Login</title>
 </head>
-<body class="text-center">
-
+<body>
+	<jsp:include page="menu.jsp"/>
+	
 	<div class="jumbotron">
-		<div class="container">
+		<div class="container" align="center">
 			<h1 class="display-3">로그인</h1>
 		</div>
 	</div>
@@ -16,26 +19,31 @@
 			<h3 class="form-signin-heading">Please sign in</h3>
 			<%
 				String error = request.getParameter("error");
-				if (error != null) {
+				if(error != null) {
 					out.println("<div class='alert alert-danger'>");
-					out.println("아이디와 비밀번호를 확인해 주세요");
+					out.println("아이디와 비밀번호를 확인해주세요.");
 					out.println("</div>");
 				}
 			%>
 			<form class="form-signin" action="j_security_check" method="post">
 				<div class="form-group">
-					<label for="inputUserName" class="sr-only">User Name</label> 
-					<input	type="text" class="form-control" placeholder="ID"	name='j_username' required autofocus>
+					<label for="inputuserName" class="sr-only">User Name
+					</label>
+					<input type="text" class="form-control" placeholder="ID"
+					name='j_username' required autofocus>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword" class="sr-only">Password</label> 
-					<input 	type="password" class="form-control" placeholder="Password" name='j_password' required>
+					<label for="inputPassword" class="sr-only">Password
+					</label>
+					<input type="password" class="form-control"
+					placeholder="Password" name='j_password' required>
 				</div>
-				<button class="btn btn btn-lg btn-success btn-block" type="submit">로그인</button>
+				<br><br>
+				<button class="btn btn btn-lg btn-success btn-block"
+				type="submit">로그인</button>
 			</form>
 		</div>
+		<jsp:include page="footer.jsp"/>
 	</div>
-	
-	<%@ include file="footer.jsp" %>
 </body>
 </html>

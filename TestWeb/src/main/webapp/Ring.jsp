@@ -7,15 +7,9 @@
 </head>
   
 <body>
-
-<div class = "container">
-	<div class = "text-center">
-    	<h1>상품 목록</h1>
-    </div>
-</div>
    	
   	<jsp:include page="menu.jsp"/>
-	
+		
 	<div class="container">
       <div class="col-md-7">    	
       	<%@ include file="dbconn.jsp" %>
@@ -35,16 +29,15 @@
         <p><%=rs.getString("p_UnitPrice") %>원
         <p class="fs-2">Size</p>
         (12호 - 14호 기준)
-        <br>
+        <br><br>
         <p class="fs-2">Meterial</p>
         <p>신주, 앤틱도금</p> 
 		<p><%=rs.getString("p_description") %>
+		<br>
         <a href="cart.jsp" type="button" class="btn btn-outline-primary me-2">
         상품 구매</a>
         <a href="#" type="button" class="btn btn-outline-primary me-2">
         장바구니 담기</a>
-        <a href="#" type="button" class="btn btn-outline-primary me-2">
-        상품 삭제</a>
         <hr class="featurette-divider">
         <%
 			}

@@ -8,11 +8,6 @@
 </head>
   
 <body>
-<div class = "container">
-	<div class = "text-center">
-    	<h1>별23#</h1>
-    </div>
-</div>
 
 <%@ include file="menu.jsp" %>
    	 
@@ -43,8 +38,7 @@
  <div class="container marketing">
 
     <div class="row">
-      
-      <div style="text-align:center" class="col-lg-4">
+      <div class="col-lg-4">
       <img src="upload2/ring1.jpg" width="140" height="140" x="50%" y="50%"/>
         <h2 class="fw-normal">Ring</h2>
         <p>별23#에서 아름답고 트렌디한 감성의 패션아이템을 만나보세요!</p>

@@ -10,6 +10,7 @@
 <body>
 <fmt:setLocale value='<%= request.getParameter("language") %>' />
 <fmt:bundle basename="bundle.message">
+
 	<jsp:include page="menu.jsp" />
 	
 	<div class = "jumbotron">

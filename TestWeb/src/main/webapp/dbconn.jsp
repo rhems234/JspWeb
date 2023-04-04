@@ -7,7 +7,7 @@
 	
 	try {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "webmarketDB";
+		String user = "WebMarketDB";
 		String password = "web1234";
 
 		Class.forName("oracle.jdbc.driver.OracleDriver");
