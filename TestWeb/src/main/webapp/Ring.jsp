@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page errorPage ="exceptionNoProductId.jsp"%>
+<%@ page import = "java.sql.*" %>
 <!DOCTYPE html>
 <html lang="KO">
 <head>
@@ -39,15 +40,15 @@
         <p class="fs-2">가격</p>
         <p><%=rs.getString("p_UnitPrice") %>원
         <p class="fs-2">Size</p>
-        (12호 - 14호 기준)
+        <p><%=rs.getString("p_Manufacturer") %>
         <br><br>
         <p class="fs-2">Meterial</p>
         <p>신주, 앤틱도금</p> 
 		<p><%=rs.getString("p_description") %>
 		<br>
 		<form name="addForm" action="./addCart.jsp?id=<%=rs.getString("p_id")%>" method="post">
-        <a href="#" type="button" class="btn btn-outline-primary me-2" onclick="addToCart()">
-        상품 추가</a>
+        <a href="./product.jsp?id=<%=rs.getString("p_id")%>"
+		class="btn btn-outline-primary me-2" role="button">상세 정보 &raquo;</a>
         </form>
         <hr class="featurette-divider">
         <%
@@ -63,7 +64,7 @@
       </div>
     </div>
  
-<%@ include file="footer.jsp"%>
+	<jsp:include page="footer.jsp" />
 
   </body>
 </html>
