@@ -15,15 +15,15 @@
       
  	<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="<c:url value="/main.jsp"/>" class="nav-link px-2 link-dark">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">#</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Remove</a></li>
         <li><a href="<c:url value="/Ring.jsp"/>" class="nav-link px-2 link-dark">Ring</a></li>
-        <li><a href="<c:url value="/addProduct.jsp"/>" class="nav-link px-2 link-dark">상품등록</a></li>
+        <li><a href="<c:url value="/addProduct.jsp"/>" class="nav-link px-2 link-dark">Update</a></li>
         <li><a href="<c:url value="/BoardListAction.do?pageNum=1"/>" class="nav-link px-2 link-dark">게시판</a></li>
     </ul>
     
     <div class="col-md-3 text-end">
     	<a href="<c:url value="cart.jsp"/>" type="button" class="btn btn-outline-primary me-2">
-    	<i class="bi bi-bag">장바구니</i></a>
+    	<i class="bi bi-bag">Cart</i></a>
     	
         <c:choose>
         <c:when test="${empty sessionId}">
