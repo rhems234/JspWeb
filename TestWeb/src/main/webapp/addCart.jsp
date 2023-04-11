@@ -38,7 +38,7 @@
 		
 		
 	} else
-		out.println("일치하는 상품이 없습니다");
+		out.println("There are no matching products");
 	
 
 // 	ArrayList<Product> goodsList = dao.getAllProducts();

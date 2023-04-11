@@ -15,7 +15,7 @@
       
  	<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="<c:url value="/main.jsp"/>" class="nav-link px-2 link-dark">Home</a></li>
-        <li><a href="<c:url value="/editProduct.jsp?edit=delete"/>" class="nav-link px-2 link-dark">Remove</a></li>
+        <li><a href="<c:url value="/editProduct.jsp?edit=delete"/>" class="nav-link px-2 link-dark">Edit</a></li>
         <li><a href="<c:url value="/Ring.jsp"/>" class="nav-link px-2 link-dark">Ring</a></li>
         <li><a href="<c:url value="/addProduct.jsp"/>" class="nav-link px-2 link-dark">Update</a></li>
         <li><a href="<c:url value="/BoardListAction.do?pageNum=1"/>" class="nav-link px-2 link-dark">Board</a></li>

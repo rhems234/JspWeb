@@ -9,12 +9,12 @@
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">주문 취소</h1>
+			<h1 class="display-3">Cancel</h1>
 		</div>
 	</div>
 	
 	<div class="container">
-		<h2 class="alert alert-danger">주문이 취소되었습니다.</h2>
+		<h2 class="alert alert-danger">order has been canceled.</h2>
 	</div>
 	
 	<div class="container">

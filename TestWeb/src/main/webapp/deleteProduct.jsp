@@ -14,7 +14,7 @@
 		pstmt.setString(1, productId);
 		pstmt.executeUpdate();
 	} else
-		out.println("일치하는 상품이 없습니다");
+		out.println("There are no matching products");
 	
 	if (rs != null)
 		rs.close();

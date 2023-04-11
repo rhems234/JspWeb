@@ -50,7 +50,7 @@
 	
 	if(rs.next()) {
 		if(fileName != null) {
-			sql = "UPDATE product SET p_name=?, p_unitPrice=?, p_description=?,p_manufacturer=?, p_category=?, p_unitsInStock=?,p_condition=?,p_fileName=?WHERE p_id=?";
+			sql = "UPDATE product SET p_name=?, p_unitPrice=?, p_description=?,p_manufacturer=?, p_category=?, p_unitsInStock=?,p_condition=?,p_fileName=? WHERE p_id=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, name);
 			pstmt.setInt(2, price);

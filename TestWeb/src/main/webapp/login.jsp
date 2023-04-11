@@ -21,7 +21,7 @@
 				String error = request.getParameter("error");
 				if(error != null) {
 					out.println("<div class='alert alert-danger'>");
-					out.println("아이디와 비밀번호를 확인해주세요.");
+					out.println("Please check your ID and password.");
 					out.println("</div>");
 				}
 			%>
@@ -40,7 +40,7 @@
 				</div>
 				<br><br>
 				<button class="btn btn btn-lg btn-success btn-block"
-				type="submit">로그인</button>
+				type="submit">Login</button>
 			</form>
 		</div>
 		<jsp:include page="footer.jsp"/>

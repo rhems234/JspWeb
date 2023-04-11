@@ -7,7 +7,7 @@
 <title>Product Edit</title>
 <script type ="text/javascript">
 	function deleteConfirm(id){
-		if(confirm("해당 상품을 삭제합니다!") == true)
+		if(confirm("Delete the product!") == true)
 			location.href = "./deleteProduct.jsp?id=" + id;
 		else
 			return;
@@ -44,7 +44,7 @@
 					if(edit.equals("update")) {
 						%>
 						<a href="./updateProduct.jsp?id=<%=rs.getString("p_id") %>"
-						class="btn btn-success" role="button">수정 &raquo;</a>
+						class="btn btn-success" role="button"> Edit &raquo;</a>
 						<%
 						} else if (edit.equals("delete")) {
 				 		%>

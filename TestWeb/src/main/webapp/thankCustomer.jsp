@@ -4,7 +4,7 @@
 <html>
 <head>
 <link rel = "stylesheet" href="./resources/css/bootstrap.min.css"/>
-<title>주문 완료</title>
+<title>Order Complete</title>
 </head>
 <body>
 	<%
@@ -31,17 +31,17 @@
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">주문 완료</h1>
+			<h1 class="display-3">Order Complete</h1>
 		</div>
 	</div>
 	
 	<div class="container">
-		<h2 class="alert alert-danger">주문해주셔서 감사합니다.</h2>
-		<p> 주문은 <%		out.println(shipping_shippingDate); %>에 배송될 예정입니다!
-		<p> 주문번호 : <% out.println(shipping_cartId); %>
+		<h2 class="alert alert-danger">Thank you for your order.</h2>
+		<p> Order is <%		out.println(shipping_shippingDate); %>will be shipped to!
+		<p> Order Number : <% out.println(shipping_cartId); %>
 	</div>
 	<div class="container">
-		<p> <a href="./Ring.jsp" class="btn btn-secondary"> &laquo; 상품 목록</a>
+		<p> <a href="./Ring.jsp" class="btn btn-secondary"> &laquo; Product List</a>
 	</div>
 </body>
 </html>

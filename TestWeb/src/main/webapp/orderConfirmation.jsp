@@ -57,22 +57,22 @@
 		</div>
 		<div class="row justify-content-between">
 			<div class="col-4" align="left">
-				<strong>배송 주소</strong> <br> Name : <%out.println(shipping_name); %>	<br>
+				<strong>shipping address</strong> <br> Name : <%out.println(shipping_name); %>	<br>
 				Zip code : <% out.println(shipping_zipCode); %><br>
 				Address : <% out.println(shipping_addressName); %>(<%out.println(shipping_country); %>) <br>
 			</div>
 			<div class="col-4" align="right">
-				<p>	<em>배송일 : <%out.println(shipping_shippingDate); %></em>
+				<p>	<em>delivery date : <%out.println(shipping_shippingDate); %></em>
 			</div>
 		</div>	
 	
 		<div>
 		<table class="table table-hover">
 		<tr>
-			<th class="text-center">도서</th>
-			<th class="text-center">#</th>
-			<th class="text-center">가격</th>
-			<th class="text-center">소계</th>
+			<th class="text-center">Ring name</th>
+			<th class="text-center">units</th>
+			<th class="text-center">price</th>
+			<th class="text-center">sub total</th>
 		</tr>
 		<%
 			int sum = 0;
@@ -97,15 +97,15 @@
 		<tr>
 			<td> </td>
 			<td> </td>
-			<td class="text-right"><strong>총액 : </strong></td>
+			<td class="text-right"><strong>total : </strong></td>
 			<td class="text-center text-danger"><strong><%=sum%>
 			</strong></td>
 		</tr>
 		</table>
 		
-		<a href="./shippingInfo.jsp?cartId=<%=shipping_cartId %>" class="btn btn-secondary" role="button"> 이전 </a>
-		<a href="./thankCustomer.jsp" class="btn btn-success" role="button"> 주문 완료 </a>
-		<a href="./checkOutCancelled.jsp" class="btn btn-secondary" role="button"> 취소 </a>
+		<a href="./shippingInfo.jsp?cartId=<%=shipping_cartId %>" class="btn btn-secondary" role="button"> before </a>
+		<a href="./thankCustomer.jsp" class="btn btn-success" role="button"> Order Complete </a>
+		<a href="./checkOutCancelled.jsp" class="btn btn-secondary" role="button"> Cancel </a>
 		</div>
 		</div>
 </body>
