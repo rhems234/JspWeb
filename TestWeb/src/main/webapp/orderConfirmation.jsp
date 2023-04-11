@@ -41,25 +41,25 @@
 <html>
 <head>
 <link rel = "stylesheet" href="./resources/css/bootstrap.min.css"/>
-<title>주문 정보</title>
+<title>Ordering Information</title>
 </head>
 <body>
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">주문 정보</h1>
+			<h1 class="display-3">Ordering Information</h1>
 		</div>
 	</div>
 	
 	<div class="container col-8 alert alert-info">
 		<div class="text-center">
-			<h1>영수증</h1>
+			<h1>receipt</h1>
 		</div>
 		<div class="row justify-content-between">
 			<div class="col-4" align="left">
-				<strong>배송 주소</strong> <br> 성명 : <%out.println(shipping_name); %>	<br>
-				우편번호 : <% out.println(shipping_zipCode); %><br>
-				주소 : <% out.println(shipping_addressName); %>(<%out.println(shipping_country); %>) <br>
+				<strong>배송 주소</strong> <br> Name : <%out.println(shipping_name); %>	<br>
+				Zip code : <% out.println(shipping_zipCode); %><br>
+				Address : <% out.println(shipping_addressName); %>(<%out.println(shipping_country); %>) <br>
 			</div>
 			<div class="col-4" align="right">
 				<p>	<em>배송일 : <%out.println(shipping_shippingDate); %></em>

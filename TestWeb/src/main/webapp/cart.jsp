@@ -8,32 +8,32 @@
 <%
 	String cartId = session.getId();
 %>
-<title>장바구니</title>
+<title>Shopping Cart</title>
 </head>
 <body>
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">장바구니</h1>
+			<h1 class="display-3">Cart</h1>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
 			<table width="100%">
 				<tr>
-					<td align="left"><a href="./deleteCart.jsp?cartId=<%=cartId%>" class="btn btn-danger">삭제하기</a></td>
-					<td align="right"><a href="./shippingInfo.jsp?cartId=<%= cartId %>" class="btn btn-success">주문하기</a></td>
+					<td align="left"><a href="./deleteCart.jsp?cartId=<%=cartId%>" class="btn btn-danger">Delete All</a></td>
+					<td align="right"><a href="./shippingInfo.jsp?cartId=<%= cartId %>" class="btn btn-success">Order</a></td>
 				</tr>
 			</table>
 		</div>
 		<div style="padding-top: 50px">
 			<table class="table table-hover">
 				<tr>
-					<th>상품</th>
-					<th>가격</th>
-					<th>수량</th>
-					<th>소계</th>
-					<th>비고</th>
+					<th>Product</th>
+					<th>Price</th>
+					<th>Units</th>
+					<th>Sub total</th>
+					<th>note</th>
 				</tr>
 				<%				
 					int sum = 0;
@@ -51,7 +51,8 @@
 					<td><%=product.getUnitPrice()%></td>
 					<td><%=product.getQuantity()%></td>
 					<td><%=total%></td>
-					<td><a href="./removeCart.jsp?id=<%=product.getProductId()%>" class="badge badge-danger">삭제</a></td>
+					<td><a href="./removeCart.jsp?id=<%=product.getProductId() %>" 
+					class="badge badge-danger" style="color:blue">Remove</a></td>
 				</tr>
 				<%
 					}
@@ -59,12 +60,12 @@
 				<tr>
 					<th></th>
 					<th></th>
-					<th>총액</th>
+					<th>Sum</th>
 					<th><%=sum%></th>
 					<th></th>
 				</tr>
 			</table>
-			<a href="./Ring.jsp" class="btn btn-secondary"> &laquo; 쇼핑 계속하기</a>
+			<a href="./Ring.jsp" class="btn btn-secondary"> &laquo; Go Shopping</a>
 		</div>
 		<hr>
 	</div>

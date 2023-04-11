@@ -4,7 +4,7 @@
 <html>
 <head>
 <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<title>상품 편집</title>
+<title>Product Edit</title>
 <script type ="text/javascript">
 	function deleteConfirm(id){
 		if(confirm("해당 상품을 삭제합니다!") == true)
@@ -21,7 +21,7 @@
 	<jsp:include page = "menu.jsp"/>
 	<div class = "jumbotron">
 		<div class="container" >
-			<h1 class="display-3">상품 편집</h1>
+			<h1 class="display-3">Edit</h1>
 		</div>
 	</div>
 	
@@ -49,7 +49,7 @@
 						} else if (edit.equals("delete")) {
 				 		%>
 				 		<a href="#" onclick = "deleteConfirm('<%=rs.getString("p_id") %>')"
-				 		class ="btn btn-danger" role="button"> 삭제 &raquo;</a>
+				 		class ="btn btn-danger" role="button"> Remove &raquo;</a>
 				 		<%
 						}
 				 		%>

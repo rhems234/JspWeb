@@ -13,29 +13,29 @@ public class ProductRepository {
 	}
 	
 	public ProductRepository() {
-		Product phone = new Product("p1234", "iPhone 6s", 8900);
-		phone.setDescription("4.7-inch, 13334X750 Renina HD display, 8-megapixel iSight Camera");
+		Product phone = new Product("p1237", "Sliver Ring", 29000);
+		phone.setDescription("Make your own color with Shoveoff");
 		phone.setCategory("Ring");
-		phone.setManufacturer("KOR");
+		phone.setManufacturer("SHOVEOFF");
 		phone.setUnitsInStock(100);
 		phone.setCondition("New");
-		phone.setFilename("P1234.png");
+		phone.setFilename("P1237.png");
 		
-		Product notebook = new Product("p1235", "LG PC 그램", 1500000);
-		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
-		notebook.setCategory("Notebook");
-		notebook.setManufacturer("LG");
-		notebook.setUnitsInStock(1000);
+		Product notebook = new Product("p1238", "3106 RING", 25000);
+		notebook.setDescription("It shows QUARQOR's own  TEXTURE experiment like a vintage style-that has more value over time.");
+		notebook.setCategory("RING");
+		notebook.setManufacturer("QUARQOR");
+		notebook.setUnitsInStock(50);
 		notebook.setCondition("Refurbished");
-		notebook.setFilename("P1235.png");
+		notebook.setFilename("P1238.png");
 		
-		Product tablet = new Product("p1236", "Galaxy Tab S", 900000);
-		tablet.setDescription("212.8*125.6*6.6mm, Super AMOLED display, 0cta-Core processor");
-		tablet.setCategory("Tablet");
-		tablet.setManufacturer("Samsung");
-		tablet.setUnitsInStock(1000);
+		Product tablet = new Product("p1239", "oval wood", 138000);
+		tablet.setDescription("oval wood ring This is a ring with a wooden engraving on the side of an oval natural stone.");
+		tablet.setCategory("RING");
+		tablet.setManufacturer("SHOVEOFF");
+		tablet.setUnitsInStock(30);
 		tablet.setCondition("Old");
-		tablet.setFilename("P1236.png");
+		tablet.setFilename("P1239.png");
 		
 		ListOfProudcts.add(phone);
 		ListOfProudcts.add(notebook);

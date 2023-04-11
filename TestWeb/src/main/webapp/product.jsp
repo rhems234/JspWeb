@@ -5,7 +5,7 @@
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<title>상품 상세 정보</title>
+<title>More Information</title>
 <script type="text/javascript">
 	function addToCart() {
 		if (confirm("상품을 장바구니에 추가하시겠습니까?")) {
@@ -20,7 +20,7 @@
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">상품 정보</h1>
+			<h1 class="display-3">Information</h1>
 		</div>
 	</div>
 <%-- 	<% --%>
@@ -56,15 +56,15 @@
 
 				<h3><%=rs.getString("p_name")%></h3>
 				<p><%=rs.getString("p_description")%></p>
-				<p><b>상품 코드 : </b><span class="badge badge-danger"> <%=rs.getString("p_id")%></span>
-				<p><b>제조사</b> : <%=rs.getString("p_manufacturer")%>
-				<p><b>분류</b> : <%=rs.getString("p_category")%>
-				<p><b>재고 수</b> : <%=rs.getString("p_unitsInStock")%>
+				<p><b>Product Code : </b><span class="badge badge-danger" style="color:Red"> <%=rs.getString("p_id")%></span>
+				<p><b>Brand</b> : <%=rs.getString("p_manufacturer")%>
+				<p><b>Category</b> : <%=rs.getString("p_category")%>
+				<p><b>Units</b> : <%=rs.getString("p_unitsInStock")%>
 				<h4><%=rs.getString("p_unitprice")%>원</h4>
 				<p><form name="addForm" action="./addCart.jsp?id=<%=rs.getString("p_id")%>" method="post">
-					<a href="#" class="btn btn-info" onclick="addToCart()"> 상품 주문 &raquo;</a> 
-					<a href="./cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
-					<a href="./Ring.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
+					<a href="#" class="btn btn-info" onclick="addToCart()"> Order &raquo;</a> 
+					<a href="./cart.jsp" class="btn btn-warning"> Cart &raquo;</a>
+					<a href="./Ring.jsp" class="btn btn-secondary"> List &raquo;</a>
 				</form>
 			</div>
 		</div>
