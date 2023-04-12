@@ -40,19 +40,10 @@
 				<h3><%= rs.getString("p_name") %></h3>
 				<p><%= rs.getString("p_description") %></p>
 				<p><%= rs.getString("p_UnitPrice") %></p>
-				<p><%
-					if(edit.equals("update")) {
-						%>
-						<a href="./updateProduct.jsp?id=<%=rs.getString("p_id") %>"
+				<p><a href="./updateProduct.jsp?id=<%=rs.getString("p_id") %>"
 						class="btn btn-success" role="button"> Edit &raquo;</a>
-						<%
-						} else if (edit.equals("delete")) {
-				 		%>
-				 		<a href="#" onclick = "deleteConfirm('<%=rs.getString("p_id") %>')"
-				 		class ="btn btn-danger" role="button"> Remove &raquo;</a>
-				 		<%
-						}
-				 		%>
+				<a href="#" onclick = "deleteConfirm('<%=rs.getString("p_id") %>')"
+				 		class ="btn btn-danger" role="button"> Remove &raquo;</a>						
 			</div>
 			<%
 				}

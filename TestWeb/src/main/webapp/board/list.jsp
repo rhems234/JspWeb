@@ -16,7 +16,7 @@
 <script type="text/javascript">
 	function checkForm() {	
 		if (${sessionId==null}) {
-			alert("로그인 해주세요.");
+			alert("Please Login ");
 			return false;
 		}
 
