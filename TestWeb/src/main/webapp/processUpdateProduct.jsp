@@ -72,7 +72,8 @@
 			pstmt.setString(5, category);
 			pstmt.setLong(6, stock);
 			pstmt.setString(7, condition);
-			pstmt.setString(8, productId);
+			pstmt.setString(8, fileName);
+			pstmt.setString(9, productId);
 			pstmt.executeUpdate();
 		}
 	}

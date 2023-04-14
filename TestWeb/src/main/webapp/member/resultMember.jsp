@@ -9,7 +9,7 @@
 	
 	<div class="jumbotron">
 		<div class="container" align="center">
-			<h1 class="display-3">회원정보</h1>
+			<h1 class="display-3">Profile</h1>
 		</div>
 	</div>
 
@@ -18,16 +18,16 @@
 			String msg = request.getParameter("msg");
 
 			if (msg != null) {
-				if (msg.equals("0"))
-					out.println(" <h2 class='alert alert-danger'>회원정보가 수정되었습니다.</h2>");
-				else if (msg.equals("1"))
-					out.println(" <h2 class='alert alert-danger'>회원가입을 축하드립니다.</h2>");
-				else if (msg.equals("2")) {
+				if (msg.equals("0")) // 회원 정보 수정
+					out.println(" <h2 class='alert alert-danger'>Member information has been modified.</h2>");
+				else if (msg.equals("1")) // 회원 가입
+					out.println(" <h2 class='alert alert-danger'>Congratulations on becoming a member.</h2>");
+				else if (msg.equals("2")) { // 회
 					String loginId = (String) session.getAttribute("sessionId");
-					out.println(" <h2 class='alert alert-danger'>" + loginId + "님 환영합니다</h2>");
+					out.println(" <h2 class='alert alert-danger'> Welcome to " + loginId);
 				}				
 			} else {
-				out.println("<h2 class='alert alert-danger'>회원정보가 삭제되었습니다.</h2>");
+				out.println("<h2 class='alert alert-danger'>Member information has been deleted.</h2>");
 			}
 		%>
 	</div>	

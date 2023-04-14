@@ -46,11 +46,10 @@
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10 ">
 					<c:set var="userId" value="<%=notice.getId()%>" />
-					<c:if test="${sessionId==userId}">
-						<p>
-							<a	href="./BoardDeleteAction.do?num=<%=notice.getNum()%>&pageNum=<%=nowpage%>"	class="btn btn-danger"> Remove</a> 
+					
+						<p> <a href="./BoardDeleteAction.do?num=<%=notice.getNum()%>&pageNum=<%=nowpage%>"class="btn btn-danger"> Remove</a> 
 							<input type="submit" class="btn btn-success" value="correction ">
-					</c:if>
+					
 					<a href="./BoardListAction.do?pageNum=<%=nowpage%>"class="btn btn-primary"> List</a>
 				</div>
 			</div>
